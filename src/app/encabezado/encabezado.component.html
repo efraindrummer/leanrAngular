@@ -1,0 +1,23 @@
+<!--ul>
+    <li><a routerLink="/">Inicio</a></li>
+    <li><a routerLink="/pipes">Pies</a></li>
+    <li><a routerLink="/ejemplo">Ejemplo</a></li>
+    <li><a routerLink="/directivas">Directiva</a></li>
+</ul-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="#">Barra Principal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <li><a class="nav-item nav-link " routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Inicio</a></li>
+            <li><a class="nav-item nav-link " routerLink="/pipes" routerLinkActive="active">Pies</a></li>
+            <li><a class="nav-item nav-link " routerLink="/ejemplo" routerLinkActive="active">Ejemplo</a></li>
+            <li><a class="nav-item nav-link " routerLink="/directivas" routerLinkActive="active">Directiva</a></li>
+            <li><a class="nav-item nav-link " routerLink="/usuarios" routerLinkActive="active">Usuarios</a></li>
+            <li><a class="nav-item nav-link " routerLink="/articulo" routerLinkActive="active">Articulo</a></li>
+        </div>
+    </div>
+</nav>

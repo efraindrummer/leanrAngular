@@ -1,0 +1,47 @@
+<!--
+    div *ngIf="!cargando">
+    <p>Hola termino de cargar</p>
+</div>
+
+<img *ngIf="cargando" src="https://media1.tenor.com/images/2df94b2cbc32b465b9ec02451f6ffcd9/tenor.gif?itemid=8696160" alt="">
+
+<button (click)="alternar()">Alternar</button-->
+
+<!--div *ngFor="let nombre of nombres">
+    <p>Hola mi nombres es: {{ nombre }}</p>
+</div>
+
+<div *ngFor="let producto of productos" class="producto">
+    <p>El producto es: {{ producto.nombre }}</p>
+    <p>Su stock es: {{ producto.stock }}</p>
+    <p>Su fabricante es: {{ producto.fabricante }}</p>
+    <p>Su fecha de vencimiento es: {{ producto.fechaVence }}</p>
+</div-->
+<!-- 
+    <div class="tab" [ngSwitch]="pestana">
+        <button (click)="cambiarPestana('perfil')">Perfil</button>
+        <button (click)="cambiarPestana('puntos')">Puntos</button>
+        <button (click)="cambiarPestana('info')">Info</button>
+    
+        <div class="tabContenido">
+            <p *ngSwitchCase="'perfil'">Este es el perfil</p>
+            <p *ngSwitchCase="'puntos'">Estos son los puntos</p>
+            <p *ngSwitchCase="'info'">Esta es la info</p>
+            <p *ngSwitchDefault>Selecciona una pestaña</p>
+        </div>
+    
+    </div>
+-->
+<br><br>
+<button (click)="alternarFondo()">Alternar</button>
+
+<div [ngClass]="{ 'cuadrado':mostrarCuadrado }">
+    <p>Este debveria de aparecer con un fondo verde</p>
+</div>
+
+<div *ngFor="let producto of productos" class="producto">
+    <p [ngClass]="{ 'textoImportante': producto.esImportante, 'textoGrande': producto.textoGrande}">El producto es: {{ producto.nombre }}</p>
+    <p>Su stock es: {{ producto.stock }}</p>
+    <p>Su fabricante es: {{ producto.fabricante }}</p>
+    <p [class.textoImportante]="producto.esImportante">Su fecha de vencimiento es: {{ producto.fechaVence }}</p>
+</div>
